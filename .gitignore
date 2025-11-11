@@ -1,0 +1,40 @@
+# Build outputs
+/build
+/captures
+.gradle
+.cxx
+.externalNativeBuild
+
+# IDE
+*.iml
+.idea/
+.DS_Store
+
+# Local config
+local.properties
+
+# IntelliJ specific files
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Logs / temp
+*.log
+*.tmp
+
+# Signing / secrets
+*.jks
+*.keystore
+google-services.json
+firebase-service-account.json
+
+openCVLibrary410/.cxx/
+
+**/build/
+*.apk
+*.aar
+*.so
+*.a
