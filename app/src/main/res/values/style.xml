@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="loginEditTextContainer">
+        <item name="android:background">@drawable/bg_edit_text_container</item>
+    </style>
+</resources>

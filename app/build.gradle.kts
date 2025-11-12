@@ -51,6 +51,7 @@ android {
 }
 
 dependencies {
+    implementation(mapOf("name" to "choicetech_login_crm_sdk_v322", "ext" to "aar"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

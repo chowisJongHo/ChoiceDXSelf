@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/companyLogoImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_29sdp"
+        android:src="@drawable/ctk_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_34sdp"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companyLogoImage"
+        tools:text="Administrator" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginEmailContainer"
+        style="@style/loginEditTextContainer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_33sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginTitle">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/loginEmailIcon"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:background="@drawable/bg_login_icon"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_email"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/loginEmailEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/editTextHintColor"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/loginEmailIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:hint="Email Address" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loginPasswordContainer"
+        style="@style/loginEditTextContainer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginEmailContainer">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/loginPasswordIcon"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:background="@drawable/bg_login_icon"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/loginPasswordEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/editTextHintColor"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/loginPasswordIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:hint="Password" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/infoTextColor"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginPasswordContainer"
+        tools:text="Enter admin password to access the settings page" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="@dimen/_134sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_33sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginInfoText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
