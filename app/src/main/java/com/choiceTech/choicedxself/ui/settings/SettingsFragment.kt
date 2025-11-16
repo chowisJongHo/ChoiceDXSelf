@@ -1,12 +1,14 @@
 package com.choiceTech.choicedxself.ui.settings
 
-import android.provider.Settings
+import android.view.View
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.choiceTech.choicedxself.core.base.BaseFragment
 import com.choiceTech.choicedxself.databinding.FragmentSettingsBinding
+import com.choiceTech.choicedxself.ui.common.collectHandler
+import com.choiceTech.choicedxself.ui.settings.viewmodel.SettingsGeneralSelected
 import com.choiceTech.choicedxself.ui.settings.viewmodel.SettingsSelected
 import com.choiceTech.choicedxself.ui.settings.viewmodel.SettingsViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -24,12 +26,21 @@ class SettingsFragment: BaseFragment<FragmentSettingsBinding>(
         mapOf(
             binding.settingsDeviceContainer to SettingsSelected.DEVICE,
             binding.settingsProductContainer to SettingsSelected.PRODUCT
-        ).forEach { (button, mode) ->
-            button.setOnClickListener { viewModel.onSettingsClick(mode) }
+        ).forEach { (button, selected) ->
+            button.setOnClickListener { viewModel.onSettingsClick(selected) }
         }
 
         binding.settingsLogoutContainer.setOnClickListener {
             viewModel.requestLogout()
+        }
+
+        mapOf(
+            binding.settingsResultContainer to SettingsGeneralSelected.RESULT_SUMMARY,
+            binding.settingsAnalysisContainer to SettingsGeneralSelected.ANALYSIS_MODE
+        ).forEach { (button, selected) ->
+            button.setOnClickListener {
+                viewModel.onSettingsGeneralClick(selected)
+            }
         }
     }
 
@@ -48,8 +59,18 @@ class SettingsFragment: BaseFragment<FragmentSettingsBinding>(
                 }
 
                 launch {
-                    viewModel.crmState.collect {
-                        TODO()
+                    viewModel.crmState.collectHandler(
+                        onShowLoading = {},
+                        onHideLoading = {},
+                        onSuccess = {},
+                        onFailure = {}
+                    )
+                }
+
+                launch {
+                    viewModel.resultSummaryToggle.collect { isShow ->
+                        binding.settingsResultItemContainer.visibility =
+                            if (isShow) View.VISIBLE else View.GONE
                     }
                 }
             }

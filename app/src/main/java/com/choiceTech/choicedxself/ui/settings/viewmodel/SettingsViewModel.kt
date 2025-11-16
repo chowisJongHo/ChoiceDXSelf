@@ -23,6 +23,11 @@ class SettingsViewModel @Inject constructor(
     private val _crmState = MutableStateFlow<ApiUiState>(ApiUiState.Idle)
     val crmState = _crmState.asStateFlow()
 
+    private val _resultSummaryToggle = MutableStateFlow(false)
+    private val _analysisModeToggle = MutableStateFlow(false)
+    val resultSummaryToggle = _resultSummaryToggle.asStateFlow()
+    val analysisModeToggle = _analysisModeToggle.asStateFlow()
+
     fun onSettingsClick(selected: SettingsSelected) {
         viewModelScope.launch {
             _settingsShared.emit(selected)
@@ -39,9 +44,33 @@ class SettingsViewModel @Inject constructor(
             }
         }
     }
+
+    fun onSettingsGeneralClick(selected: SettingsGeneralSelected) {
+        generalToggle(selected)
+    }
+
+    private fun generalToggle(selected: SettingsGeneralSelected) {
+        when(selected) {
+            SettingsGeneralSelected.RESULT_SUMMARY -> resultSummaryToggle()
+            SettingsGeneralSelected.ANALYSIS_MODE -> analysisModeToggle()
+        }
+    }
+
+    private fun resultSummaryToggle() {
+        _resultSummaryToggle.value = !_resultSummaryToggle.value
+    }
+
+    private fun analysisModeToggle() {
+        _analysisModeToggle.value = !_analysisModeToggle.value
+    }
 }
 
 enum class SettingsSelected {
     DEVICE,
     PRODUCT
+}
+
+enum class SettingsGeneralSelected {
+    RESULT_SUMMARY,
+    ANALYSIS_MODE
 }

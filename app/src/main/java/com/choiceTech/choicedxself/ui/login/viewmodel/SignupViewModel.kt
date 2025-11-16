@@ -2,8 +2,8 @@ package com.choiceTech.choicedxself.ui.login.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.choiceTech.choicedxself.core.data.CrmEvent
 import com.choiceTech.choicedxself.core.domain.usecase.CrmUseCase
+import com.choiceTech.choicedxself.core.event.CrmEvent
 import com.choiceTech.choicedxself.core.state.ApiUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
