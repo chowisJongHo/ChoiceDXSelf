@@ -2,8 +2,8 @@ package com.choiceTech.choicedxself.ui.login.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.choiceTech.choicedxself.core.data.CrmEvent
 import com.choiceTech.choicedxself.core.domain.usecase.CrmUseCase
+import com.choiceTech.choicedxself.core.event.CrmEvent
 import com.choiceTech.choicedxself.core.state.ApiUiState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -31,14 +31,14 @@ class LoginViewModel @Inject constructor(
     }.stateIn(viewModelScope, SharingStarted.Lazily, false)
 
     fun requestLogin() {
-        viewModelScope.launch {
-            _apiState.value = ApiUiState.Loading
+        _apiState.value = ApiUiState.Loading
 
-            when(val event = crmUseCase.login(
+        viewModelScope.launch {
+            _apiState.value = when(val event = crmUseCase.login(
                 _userEmail.value.toString(), _userPassword.value.toString()
             )) {
-                is CrmEvent.Login.Failer -> _apiState.value = ApiUiState.Failer
-                CrmEvent.Login.Success -> _apiState.value = ApiUiState.Success
+                is CrmEvent.Login.Failer -> ApiUiState.Failer
+                CrmEvent.Login.Success -> ApiUiState.Success
             }
         }
     }

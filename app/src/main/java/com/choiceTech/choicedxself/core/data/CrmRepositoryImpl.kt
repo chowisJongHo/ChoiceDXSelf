@@ -3,6 +3,7 @@ package com.choiceTech.choicedxself.core.data
 import android.content.Context
 import com.choiceTech.choicedxself.core.config.Constants
 import com.choiceTech.choicedxself.core.domain.repository.CrmRepository
+import com.choiceTech.choicedxself.core.event.CrmEvent
 import com.choicetech.sdk.login.network.CTKLoginAPI
 import com.choicetech.sdk.login.network.request.RequestLoginInfo
 import com.choicetech.sdk.util.CWErrorData
@@ -67,16 +68,14 @@ class CrmRepositoryImpl @Inject constructor(
 
             }, signupInfo)
         }
-}
 
-sealed class CrmEvent {
-    sealed class Login {
-        object Success : Login()
-        data class Failer(val errorData: CWErrorData) : Login()
-    }
-
-    sealed class Signup {
-        object Success : Signup()
-        data class Failer(val errorData: CWErrorData) : Signup()
+    override suspend fun logout(): CrmEvent.Logout =
+        suspendCoroutine { continuation ->
+            loginCRM.onRequestLogout(object : ResponseCallback<Any>() {
+                override fun onFailure(p0: CWErrorData?) {}
+                override fun onError(p0: CWErrorData?) {}
+                override fun onDidStart() {}
+                override fun onSuccess(p0: Any?) {}
+            })
     }
 }
