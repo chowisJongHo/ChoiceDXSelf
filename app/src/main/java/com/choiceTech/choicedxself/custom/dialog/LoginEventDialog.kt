@@ -20,7 +20,7 @@ class LoginEventDialog(
 
         binding.loginDialogButton.setOnClickListener {
             dismiss()
-            if (mode == LoginDialogMode.SIGN_UP) onClickButton?.invoke()
+            onClickButton?.invoke()
         }
     }
 }

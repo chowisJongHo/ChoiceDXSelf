@@ -86,7 +86,15 @@ class LoginFragment: BaseFragment<FragmentLoginBinding>(
 
     private fun showLoginEventDialog(isSuccess: Boolean) {
         if (childFragmentManager.findFragmentByTag("loginEvent") == null) {
-            val dialog = LoginEventDialog(LoginDialogMode.LOGIN, isSuccess)
+            val dialog = LoginEventDialog(
+                LoginDialogMode.LOGIN,
+                isSuccess,
+                onClickButton = {
+                    findNavController().safeNavigate(
+                        LoginFragmentDirections.actionLoginToMain()
+                    )
+                }
+            )
             dialog.show(parentFragmentManager, "loginEvent")
         }
     }

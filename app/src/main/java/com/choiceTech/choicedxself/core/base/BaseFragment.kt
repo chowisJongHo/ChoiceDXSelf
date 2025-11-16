@@ -28,7 +28,11 @@ abstract class BaseFragment<VB: ViewBinding>(
 
     private val viewModel: BaseFragmentViewModel by activityViewModels()
 
+    protected lateinit var headerView: View
+
     private var loadingDialog: LoadingDialogFragment? = null
+
+    open fun shouldShowHeaderView(): Boolean = true
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -48,6 +52,13 @@ abstract class BaseFragment<VB: ViewBinding>(
         return root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        headerView = view.findViewById(R.id.header)
+
+        showHeader(shouldShowHeaderView())
+    }
+
     open fun init() {}
     open fun observe() {}
 
@@ -61,6 +72,10 @@ abstract class BaseFragment<VB: ViewBinding>(
                 }
             }
         }
+    }
+
+    private fun showHeader(isShow: Boolean) {
+        headerView.visibility = if (isShow) View.VISIBLE else View.GONE
     }
 
     /**

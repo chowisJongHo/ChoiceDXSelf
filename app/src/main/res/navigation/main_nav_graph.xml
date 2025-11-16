@@ -3,12 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.choiceTech.choicedxself.ui.main.MainFragment"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/actionMainToLogin"
+            app:destination="@id/loginFragment" />
+
+        <action android:id="@+id/testNav"
+            app:destination="@id/settingsFragment" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.choiceTech.choicedxself.ui.login.LoginFragment"
         tools:layout="@layout/fragment_login">
+
+        <argument
+            android:name="isSettings"
+            app:argType="boolean" />
+
+        <action
+            android:id="@+id/actionLoginToMain"
+            app:destination="@id/mainFragment" />
 
         <action
             android:id="@+id/actionLoginToSignup"
@@ -19,5 +41,10 @@
         android:id="@+id/signupFragment"
         android:name="com.choiceTech.choicedxself.ui.login.SingUpFragment"
         tools:layout="@layout/fragment_signup" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.choiceTech.choicedxself.ui.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
 
 </navigation>
