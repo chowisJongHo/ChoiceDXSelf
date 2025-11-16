@@ -1,3 +1,521 @@
 <resources>
-    <string name="app_name">ChoiceDXSelf</string>
+    <string name="app_name">ChoiceDX Self</string>
+    <string name="privacy_policy_content">"We respect your privacy and protect it. So we have developed a Privacy Policy that covers how we collect, use, disclose, transfer, and store your information. Please take a moment to familiarize yourself with our privacy practices to be clear how we handle your personal information, what we do and don’t collect, and why.
+
+1. Purpose of Collection and Use of Personal Information
+Our primary task is to securely process the User’s personal information. Such information shall be used to provide a seamless services only within purpose and scope the user have consented, or except as otherwise prescribed in the relevant laws and regulations. You may be asked to provide your personal information during sign-up process, and our necessary services. We use only the necessary data for the purpose of (1) providing the accurate skin/hair analysis result and product recommendation services, (2) the statistical purposes and (3) improving the usability of the service quality (providing app usage guide, notice and promotional events and newsletters) and (3) improving the algorithms and training AI models which will be applied to the analysis services for the improved accuracy. .
+
+The following minimum personal information is collected when a user signs up for the Service or while the user uses the Services, through the home page, individual applications and programs, and etc.
+
+2. What personal information we collect
+A. Required Information: Information required to provide the fundamental features of the concerned service
+
+Year of birth, gender, ethnicity, photos taken*, diagnosis results and service records.
+* Sensitive Information: This app may collect the photos of the user’s face and skin/hair/scalp which are required for the app to conduct the proper consultation process, the main purpose of the app. Especially, the face photo is used for the app’s full facial viewing services where the users can understand the general skin condition and problems easily prior to performing detailed parameter based process. This data will not be seen by other users, nor shared to any third parties without your consent. In addition, this data can be deleted in its entirety immediately upon the user’s request.
+
+B. Optional Information: Additional information which needs to be collected to provide more specialized services
+Name, Email address, phone number. Address
+
+C. Automatically collected data
+When you use our App, we also collect data that identifies your mobile device and your use of the platform. The information we store includes notification access, device-specific settings and characteristics, system activity, location details, IP address, language settings, app crashes and other device event information, access data and times of your usage of the app.
+
+D. Personal data of children
+Our service can only be used when you have reached the age of eighteen (18) years or older. When we identify personal information, children younger than eighteen (18) years old, we shall delete the data based on our legal obligations.
+
+3. How we use your personal information
+A. We use the personal information we collect to provide sustainable customer management and to determine appropriate services such as product recommendation.
+
+B. Personal information of a user which requires the user’s consent is collected after obtaining such consent of the user prior to his/her use of the specific service, which consent is given by way of checking separate online checkboxes or through offline documentation. If a user checks an online checkbox or marks on the consent field of the offline document, the user is considered to consent to the collection and processing of the relevant personal information.
+
+4. Provision of Personal Information to Third Parties
+A. The Company shall use personal information of each user only within the scope of the purpose of collection and use of the personal information, and without the prior consent of a user, shall not use the personal information beyond such purpose or provide the personal information outside the Company, with the exceptions:
+(1) where the user explicitly consents
+(2) where the applicable laws and regulations requires
+(3) where it is necessary for statistics, academic, market or industrial research in unidentifiable format.
+
+B. Users may refuse to give consent to the provision of personal information to a third party, where applicable, provided that in such case the user may be restricted from using the service provided by the third party.
+
+C. When providing personal information of a user to a third party in a foreign country, the Company shall inform the user of the same and obtain a separate consent, where necessary.
+
+5. Entrustment of Personal Information Process and the Transfer of Personal information to Overseas
+The Company may entrust the personal information processing work to a third party to perform contracts on providing services and improve convenience of users. When providing personal information of a user to a third party, the Company shall inform the user of the same and obtain a consent, where necessary.
+
+As of today, some personal information is transferred overseas to perform the following affairs:
+- Transferred company: Amazon Web Services, Inc
+- Address : 1 Rue Rateau, 93120 La Courneuve, France
+- Transferred country: France
+- Transferred data: all the data collected on the application as specified in this Privacy Policy
+- Purpose of the Transfer: cloud data analysis and saving in Amazon Web Service
+- Duration of the retention by the Transferred company: as long as is reasonably necessary to fulfil the relevant purposes set out in this privacy notice and during the period required or permitted by law.
+
+6. Retention of User’s Personal Data /n As a general rule, the Company will process and retain the user’s personal data for a maximum period of one (1) year for the purposes it was collected as specified in Article 1 of this Privacy Policy, after which point the Company will delete the user’s information. The user’s photos (face) taken will be stored up to five (5) years solely for the R and D purposes in order to improve the accuracy of the analysis upon the user’s consent, after which point the Company will delete the relevant data. In addition, when a user withdraws his/her registration or consent, the company will promptly take necessary actions to delete or erase the user’s data.
+
+7. Procedure and Method of Deletion of Personal Information
+The Company deletes personal information immediately when the personal information becomes unnecessary, including upon expiry of the retention/use period applicable to the personal information and upon attainment of the purpose for which the personal information was processed. The procedure and method of deleting personal information are as follows: A. Deletion Procedures: The Company selects personal information in respect of which an event requiring destruction has occurred, and deletes the personal information with the approval of the Company’s personal information protection officer.
+
+B. Destruction Method: In the case of personal information recorded or stored in electronic files, the Company deletes the personal information by using the technical or physical method ensuring that the personal information is not restorable or reproducible, and in the case of personal information recorded or stored in paper documents, the Company shreds the personal information with a shredder or incinerate the personal information.
+
+C. The Company shall not be responsible for any loss or damage not attributable to the Company’s fault, including any accident caused by negligence of a user or occurring within an area not managed by the Company (for example, personal information of users which are collected and used by the cosmetics store, skin clinic or skin care shop, etc. purchasing or lending the precuts of the Company), to the extent the Company has fulfilled its obligations as a personal information processor; provided that the Company takes such measures for ensuring the safety of personal information as provided in Article 6, in the event a user’s personal information is lost, leaked, falsified or damaged due to negligence of the Company’s internal manager or an accident in technical management, the Company shall inform the user of such fact and seek for proper actions and remedies
+
+8. The User’s right to access, correct and withdraws of his/her consent
+With respect to any of his/her personal information collected by the Company, a user may, at any time, request access (inspection), correction (modification), withdrawal of any given consent (withdrawal from membership or termination of contract), deletion or suspended processing.
+
+In addition, the Company shall take all measures necessary to ensure that the withdrawal of consent to collection of personal information (withdrawal from membership) can be done easier than the way the personal information is collected.
+
+9. Personal Information Protection Officer
+A. The Company designates and operates the following personal information protection officer and personal information protection division in charge of personal information matters in general to handle and remedy data subject’s complaints and carry out other customer services related to the processing of personal information
+
+B. Personal Information Protection Officer
+- Name: Ryan Won Suk Choi
+- Title/position: C.E.O.
+- Contact Detail:
+Address: A-1301-3, 184, Jungbu-daero, Giheung-gu, Yonginsi, Gyeonggi-do, South Korea 17950.
+Email: info@choicetech.kr
+The User may inquire the foregoing matters to Personal Information Protection Officer via mail or email. The request will be handled in a proper and timely manner. C. When a user requests for the correction of personal information, the concerned information shall not be displayed until such correction is completed.
+
+10. Change in the Privacy Policy
+A. This Privacy Policy may be changed or amended if necessary, including based on law, government policy or the Company’s internal policy, and any addition, deletion or change herein will be notified through “Notification” on the Company’s website in advance in the case of any material change in a user’s rights, prior to the effective date of such addition, deletion or change.
+
+Privacy Policy Version Information: v.6
+Privacy Policy Revision Date: Privacy Policy Enforcement Date: 2022.1. 19."</string>
+    <string name="start">"Start"</string>
+    <string name="next">"Next"</string>
+    <string name="close">"Close"</string>
+    <string name="ok">"Okay"</string>
+    <string name="cancel">"Cancel"</string>
+    <string name="save">"Save"</string>
+    <string name="submit">"Submit"</string>
+    <string name="notice">"Notice"</string>
+    <string name="settings">"Settings"</string>
+    <string name="professional_analysis">"Professional Analysis"</string>
+    <string name="history">"History"</string>
+    <string name="language_settings">"Language Settings"</string>
+    <string name="language_en">"English"</string>
+    <string name="language_ko">"한국어"</string>
+    <string name="language_ja">"日本語"</string>
+    <string name="language_zh">"中文"</string>
+    <string name="language_zh_CN">"简体"</string>
+    <string name="language_zh_TW">"繁體"</string>
+    <string name="language_ru">"Русский"</string>
+    <string name="language_ar" translatable="false">"Arabic"</string>
+    <string name="language_nl" translatable="false">"Dutch"</string>
+    <string name="pores">"Pores"</string>
+    <string name="spots">"Spots"</string>
+    <string name="wrinkles">"Wrinkles"</string>
+    <string name="impurities">"Impurities"</string>
+    <string name="sebum">"Sebum"</string>
+    <string name="hydration">"Hydration"</string>
+    <string name="sensitivity">"Sensitivity"</string>
+    <string name="dark_circles">"Dark Circles"</string>
+    <string name="male">"Male"</string>
+    <string name="female">"Female"</string>
+    <string name="skin_health_alarming">"Alarming"</string>
+    <string name="excellent">"Excellent"</string>
+    <string name="sebum_analysis">"Sebum Analysis"</string>
+    <string name="wrinkles_analysis">"Wrinkles Analysis"</string>
+    <string name="u_zone_analysis">"U-zone Analysis"</string>
+    <string name="step_1">"Step 1"</string>
+    <string name="step_1_optional">"Step 1 (Optional)"</string>
+    <string name="step_2">"Step 2"</string>
+    <string name="skip">"Skip"</string>
+    <string name="disclaimer">"Disclaimer"</string>
+    <string name="privacy_policy">"Privacy Policy"</string>
+    <string name="crash_log">"Crash Log"</string>
+    <string name="application_error">"Application error occurred. A report will be sent to the developers."</string>
+    <string name="charge_camera_msg">"Please charge the camera device!"</string>
+    <string name="registration_successful">"Registration Successful!"</string>
+    <string name="confirm_password">"Confirm Password"</string>
+    <string name="success">"Success"</string>
+    <string name="user_profile">"User Profile"</string>
+    <string name="update">"Update"</string>
+    <string name="change_password">"Change Password"</string>
+    <string name="forgot_password">"Forgot Password?"</string>
+    <string name="log_out">"Log out"</string>
+    <string name="log_out_confirmation">"Do you want to log out?"</string>
+    <string name="send_password_recovery">"Your password will be sent to your account email address."</string>
+    <string name="gender">"Gender"</string>
+    <string name="logged_out">"Logged out!"</string>
+    <string name="invalid_user_id">"Invalid user ID (e-mail address)"</string>
+    <string name="passwords_dont_match_msg">"Confirmation password doesn\'t match to the new password"</string>
+    <string name="invalid_email">"Invalid email address"</string>
+    <string name="input_name_msg">"Please enter first-name and last-name"</string>
+    <string name="input_email_msg">"Please enter e-mail address"</string>
+    <string name="input_password_msg">"Password must be filled out and confirmed"</string>
+    <string name="please_agree_msg">"Please agree with the terms of use and the privacy policy to proceed"</string>
+    <string name="enter_user_id_reset_msg">"Please enter user id to reset password"</string>
+    <string name="enter_email">"Enter Email"</string>
+    <string name="enter_password">"Enter Password"</string>
+    <string name="enter_new_password">"Enter New Password"</string>
+    <string name="sign_up">"Sign Up"</string>
+    <string name="login">"Login"</string>
+    <string name="agree_to_the">"I agree to the"</string>
+    <string name="last_name">"Last Name"</string>
+    <string name="first_name">"First Name"</string>
+    <string name="birthdate">"Birthdate"</string>
+    <string name="done">"Done"</string>
+    <string name="retake">"Retake"</string>
+    <string name="email_address">"Email"</string>
+    <string name="analysis_history">"Analysis History"</string>
+    <string name="go_to_results_page_confirmation">"Do you want to proceed to the Result\'s page?"</string>
+    <string name="date_time_format">"Date Time"</string>
+    <string name="measurements">"Measurements"</string>
+    <string name="all">"All"</string>
+    <string name="result_summary">"Result Summary"</string>
+    <string name="device_setup">"Device Set-up"</string>
+    <string name="no_device_found">"No device found! To unlock Professional Analysis, input device."</string>
+    <string name="input_device">"Input Device"</string>
+    <string name="serial_number">"Serial Number"</string>
+    <string name="optic_number">"Optic Number"</string>
+    <string name="enter_optic_number">"Enter Optic Number"</string>
+    <string name="device_activation">"Device Activation"</string>
+    <string name="device_activation_msg">"This feature provides additional guarantee that the device and program are synchronized and would provide accurate analysis results. The need for user\'s email address and phone information are solely for the purpose of providing the proper use of the device and sharing of information on the latest product developments."</string>
+    <string name="activation_successful">"Activation Successful!"</string>
+    <string name="activation_failed">"Activation Failed!"</string>
+    <string name="discovered_devices">"Discovered Devices"</string>
+    <string name="scanning_for_device">"Scanning for Device"</string>
+    <string name="not_connected_msg">"Your phone is not connected to the network connection. Please check your network and try again."</string>
+    <string name="failed_to_connect">"Failed to connect."</string>
+    <string name="successfully_connected">"Successfully connected!"</string>
+    <string name="connect">"Connect"</string>
+    <string name="connecting_wait">"Connecting. Please wait."</string>
+    <string name="processing_wait">"Processing. Please wait."</string>
+    <string name="administrator">"Administrator"</string>
+    <string name="enter_mobile_number">"Enter Mobile Number"</string>
+    <string name="select_position">"Select Position"</string>
+    <string name="error_4001">"This email is already in use."</string>
+    <string name="error_12001">"Login failed, wrong password or optic number."</string>
+    <string name="error_4010">"You are not unauthorized to use this service."</string>
+    <string name="error_5">"License for this application could not be found, please retry or contact admin"</string>
+    <string name="error_2">"Check your product information or contact support"</string>
+    <string name="error_40014">"Invalid access token"</string>
+    <string name="error_1010">"Invalid parameter request, please try again."</string>
+    <string name="error_30001">"Please enter your name."</string>
+    <string name="error_30002">"Please enter your mobile phone number."</string>
+    <string name="error_30003">"Please enter your position."</string>
+    <string name="error_4">"Licence for this application could not be found, please retry or contact support."</string>
+    <string name="error_100000">"The customer does not exist."</string>
+    <string name="error_10000">"Session expired. Please log in again."</string>
+    <string name="error_7">"Device already registered under different user."</string>
+    <string name="error_neg101">"Logout or token is expired."</string>
+    <string name="error_neg200">"Product does not exist."</string>
+    <string name="error_neg201">"Product used is block."</string>
+    <string name="error_neg202">"Product do not match the APP ID."</string>
+    <string name="error_neg203">"Product license period is expired."</string>
+    <string name="existing_user">"Existing User"</string>
+    <string name="city">"City"</string>
+    <string name="address_optional">"Address (Optional)"</string>
+    <string name="street_unit_village">"Street/Unit/Village"</string>
+    <string name="country">"Country"</string>
+    <string name="old_password">"Old Password"</string>
+    <string name="no_internet_connection">"No internet connection."</string>
+    <string name="profile_edit">"Profile Edit"</string>
+    <string name="retry">"Retry"</string>
+    <string name="capture">"Capture"</string>
+    <string name="confirm_email">"Please check your mailbox. A confirmation link has been sent to your email address. You can continue login after successful confirmation."</string>
+    <string name="error_code">"Error Code"</string>
+    <string name="no_device_activated">"No Device Activated"</string>
+    <string name="skin_health_score">"Skin Health Score"</string>
+    <string name="password">"Password"</string>
+    <string name="capture_complete">"Complete Filming"</string>
+    <string name="internet_detected">"Internet detected."</string>
+    <string name="connection_setup_incomplete">"Connection setup incomplete."</string>
+    <string name="invalid_password">"Invalid password"</string>
+    <string name="email_mobile_error">"Please input a valid email or mobile."</string>
+    <string name="previous">"Previous"</string>
+    <string name="user_information">"User Information"</string>
+    <string name="admin_log_in">"Admin Login"</string>
+    <string name="admin_sign_up">"Admin Sign Up"</string>
+    <string name="option_24_ghz">"2.4GHz (Default)"</string>
+    <string name="option_5_ghz">"5.0GHz"</string>
+    <string name="administrator_account_registration">"Administrator account registration"</string>
+    <string name="company_details">"Company Details (Optional)"</string>
+    <string name="device_details">"Device Details"</string>
+    <string name="enter_optic_number_and_connect">"Enter the optic number and connect the hair analyzer."</string>
+    <string name="agree_receive_news_letter_marketing">"I agree that my E-mail address will be used to receive the news letter and marketing offers on products and services from ChoiceTech Co., Ltd."</string>
+    <string name="agree_receive_renewal_notice">"I agree that my E-mail address will be used to receive the license termination/renewal notice from ChoiceTech Co., Ltd."</string>
+    <string name="use_existing_account">"Yes\n( Use existing account )"</string>
+    <string name="create_new_account">"No\n( Create new account )"</string>
+    <string name="existing_user_details">"Use existing user details"</string>
+    <string name="put_your_email_number">"Please put your email address or phone number"</string>
+    <string name="user_details_not_found">"User details not found"</string>
+    <string name="please_input_details_new_user">"Please input details for New User"</string>
+    <string name="proceed_to_take_analysis">"Proceed to take analysis"</string>
+    <string name="proceed_to_analysis">"Proceed to analysis"</string>
+    <string name="press_capture_button">"Press capture button\non the analyzer"</string>
+    <string name="not_a_member">"Not a member?"</string>
+    <string name="user_details_optional">"User Details (Optional)"</string>
+    <string name="are_you_sure_logout">"Are you sure you want to logout your account?"</string>
+    <string name="your_weakness">"Your Weakness"</string>
+    <string name="no_weakness">"No Weakness"</string>
+    <string name="birth_year">"Birth Year"</string>
+    <string name="back_home">"Back to Home"</string>
+    <string name="are_you_still_there">"Are you still there?"</string>
+    <string name="thank_you">"Thank you"</string>
+    <string name="scan_qr_code_immediately">"Scan this QR code to access your
+Web Results immediately."</string>
+
+    <!-- New Questionnaire -->
+    <string name="questionnaire">"Questionnaire"</string>
+    <string name="setting_general_customized_background">"Customized Background"</string>
+    <string name="setting_general_sebum_measurement">"Sebum Measurement"</string>
+    <string name="setting_shine_measurement">"Shine Measurement"</string>
+    <string name="setting_sebum_tape">"Sebum Tape"</string>
+    <string name="instruction_guideline">"Guideline"</string>
+    <string name="instruction_capture_sebum_tu">"Capture T &amp;amp; U Zone of Sebum Paper&lt;"</string>
+    <string name="lens_cover_pink_area">"Make sure lens covers the pink area"</string>
+    <string name="image_capture">"Image Capture"</string>
+    <string name="sebum_instruction">"Take pictures of pink sebum paper of &lt;b&gt;T&lt;/b&gt; and &lt;b&gt;U&lt;/b&gt; zone. Do not take away the camera until picture will be taken."</string>
+    <string name="t_zone">"T-zone"</string>
+    <string name="u_zone">"U-zone"</string>
+    <string name="press_the_capture_button">"Please press the capture button."</string>
+    <string name="lets_begin">"Let\'s Begin"</string>
+    <string name="skin_condition">"Skin Condition"</string>
+    <string name="are_you_sure">"Are you sure?"</string>
+    <string name="analysis_wont_be_saved">"Analysis you made so far will not be saved."</string>
+    <string name="go_back_to_home">"Go back to Home"</string>
+    <string name="registration">"Registration"</string>
+    <string name="perfect">"Perfect!"</string>
+    <string name="error">"Error"</string>
+    <string name="now_you_can_go_futher">"Now you can go further."</string>
+    <string name="notification">"Notification"</string>
+    <string name="enter_admin_password">"Enter admin password to access the settings page"</string>
+    <string name="general_options">"General Options"</string>
+    <string name="confirm_new_password">"Confirm New Password"</string>
+    <string name="code">"C.Code"</string>
+    <string name="or">"OR"</string>
+    <string name="results">"Results"</string>
+    <string name="mild">"Mild"</string>
+    <string name="almost_clear">"Almost Clear"</string>
+    <string name="dismiss">"Dismiss"</string>
+    <string name="return_device_to_shelf">"Now return the Skin Analyzer to the shelf \n and proceed with the questionnaire."</string>
+    <string name="button_proceed">"Proceed"</string>
+    <string name="coming_soon">"Coming soon!"</string>
+    <string name="please_hold_the_device">"Please hold the device \n while taking 2 images"</string>
+    <string name="send_me_the_result">"Send me the result"</string>
+    <string name="send_complete">"Completed"</string>
+    <string name="view_privacy_policy_ko">"(View)"</string>
+    <string name="i_understand_and_agree">"I understand and agree"</string>
+    <string name="skip_questionnaire">"Skip Questionnaire"</string>
+    <string name="settings_analysis_mode">"Analysis Mode"</string>
+    <string name="settings_online_analysis">"Online Analysis"</string>
+    <string name="settings_offline_analysis">"Offline Analysis"</string>
+    <string name="purchase_recommended_products">"Do you want to purchase recommended product?"</string>
+    <string name="not_now">"Not now"</string>
+    <string name="settings_enable_default">"Enable (Default)"</string>
+    <string name="settings_disable">"Disable"</string>
+    <string name="settings_enable">"Enable"</string>
+    <string name="new_customer">"New Customer"</string>
+    <string name="new_customer_notice">"Do you want to continue as a new customer?"</string>
+    <string name="home">"Home"</string>
+    <string name="select_language">"Select Language"</string>
+    <string name="hold_still">"Hold Still…"</string>
+    <string name="lets_start">"Let\'s Start"</string>
+    <string name="sebum_guide_x">"Do not press sebum paper with device"</string>
+    <string name="sebum_guide_o">"Make sure optical lens cover sebum paper fully"</string>
+    <string name="capture_sebum_title">"How to use Sebum Paper and to capture on the App."</string>
+    <string name="capture_sebum_instruction_1">"Dab the &lt;b&gt;T&lt;/b&gt; zone end part of Sebum paper to the forehead area for 2 seconds."</string>
+    <string name="capture_sebum_instruction_2">"Dab the &lt;b&gt;U&lt;/b&gt; zone end part of Sebum paper to the cheek area for 2 seconds."</string>
+    <string name="capture_uzone_title">"How to capture your U Zone on the App."</string>
+    <string name="capture_uzone_instruction_1">"Dab the skin analyzer on your cheek."</string>
+    <string name="capture_wrinkle_title">"How to capture your Wrinkles on the App."</string>
+    <string name="capture_wrinkle_instruction_1">"Take either left or right Eye wrinkle image."</string>
+    <string name="product_recommendation">"Product\nRecommendation"</string>
+
+    <!-- End of Aquavit Questionnaire -->
+    <string name="state_city_etc">"State, City, etc."</string>
+    <string name="fill_out_required_fields">"Please fill out all required fields."</string>
+    <string name="option_other">"Other"</string>
+    <string name="focus_camera_in_skin">"Focus the camera on the skin for accurate analysis."</string>
+    <string name="capture_uzone_instruction_2">"Press the capture button to take the images."</string>
+    <string name="very_hydrated">"Very hydrated"</string>
+    <string name="very_dehydrated">"Very dehydrated"</string>
+    <string name="clear">"Clear"</string>
+    <string name="type_skin">"Skin"</string>
+    <string name="rather_not_say">"Rather not say"</string>
+    <string name="very_oily">"Very oily"</string>
+    <string name="very_dry">"Very dry"</string>
+    <string name="normal">"Normal"</string>
+    <string name="dehydrated">"Dehydrated"</string>
+    <string name="moderate">"Moderate"</string>
+    <string name="severe">"Severe"</string>
+    <string name="previous_page">"Previous Page"</string>
+    <string name="skin_age">"Skin Age"</string>
+    <string name="user_detail">"User Detail"</string>
+    <string name="mode">"Mode"</string>
+    <string name="selectable">"Selectable (Default)"</string>
+    <string name="skin_only">"SO(Skin Only)"</string>
+    <string name="example">"EXAMPLE"</string>
+    <string name="input_mobile_number">"Input Mobile Number"</string>
+    <string name="scan_qr_code">"Scan QR Code"</string>
+    <string name="how_would_you_like_to_proceed">"How would you like to proceed?"</string>
+    <string name="sleep_option_never">"Never"</string>
+    <string name="sleep_option_30">"30mins. (Default)"</string>
+    <string name="sleep_option">"Sleep Option"</string>
+    <string name="share">"Share"</string>
+    <string name="user_info">"User Info"</string>
+    <string name="back_home_screen">"Do you want to go back to Home Screen? Current data will not be saved"</string>
+    <string name="failed_to_connect_2">"Make sure that the \'Analyzer\' is connected with monitor.\n\nPlease press and hold for the on off button for 2 seconds and check \'blue light\' on."</string>
+    <string name="remove_device">"Remove Device"</string>
+    <string name="go_back_to_main_screen">"Go to main screen"</string>
+    <string name="analysis_date">"Analysis Date"</string>
+    <string name="skin_group_selection">"Skin Group Selection"</string>
+    <string name="skin_group_measurement">"Skin Group Measurement"</string>
+    <string name="skin_group_detected">"Skin Group Detected"</string>
+    <string name="selection_auto">"Auto (default)"</string>
+    <string name="selection_manual">"Manual"</string>
+    <string name="selection_auto_manual">"Auto + Manual"</string>
+    <string name="option_disable">"Disable"</string>
+    <string name="nowYou">"Now you can go further"</string>
+    <string name="please_select_your_skin_group">"Please select your skin group"</string>
+    <string name="are_you_still_here">"Are you still here?"</string>
+    <string name="share_via_sms">"Share via SMS"</string>
+    <string name="example_desc">"For accurate scalp measurement\nWhen taking a photo, make the scalp part visible"</string>
+    <string name="good">"Good"</string>
+    <string name="dry">"Dry"</string>
+    <string name="oily">"Oily"</string>
+    <string name="very_poor">"Very Poor"</string>
+    <string name="poor">"Poor"</string>
+    <string name="ssid">"SSID"</string>
+    <string name="error_msg_4000">"Invalid request or API encountered issues, please try again."</string>
+    <string name="unable_to_resolve_host">"Cannot connect to the server. Please check your internet connection and try again."</string>
+    <string name="no_internet_detected">"No internet detected."</string>
+    <string name="cndp_hair_guide_step1">"Take picture of the Sebum paper."</string>
+    <string name="cndp_hair_guide_step2">"Take pictures based on the guideline image below."</string>
+    <string name="cndp_hair_guide_step3">"Take hydration based on the guideline image below."</string>
+    <string name="step_3">"Step 3"</string>
+    <string name="step_4">"Step 4"</string>
+    <string name="step_5">"Step 5"</string>
+    <string name="guidelines">"Guidelines"</string>
+    <string name="free_version">"Free Version"</string>
+    <string name="data_save_success">"The data is successfully saved"</string>
+    <string name="share_results">"Share Results"</string>
+    <string name="ble_id">"BLE ID"</string>
+    <string name="successfully_disconnected">"Successfully Disconnected!"</string>
+    <string name="active_device">"Active Device"</string>
+    <string name="device_connection">"Device Connection"</string>
+    <string name="please_hold_the_device_3">"Please hold the device \n while taking 3 images"</string>
+    <string name="thin">"Thin"</string>
+    <string name="thick">"Thick"</string>
+    <string name="password_has_been_changed">"Password has been changed."</string>
+    <string name="register">"Register"</string>
+    <string name="email_address_input">"Email Address"</string>
+    <string name="mobile_number_input">"Mobile Number"</string>
+    <string name="select_birth_year">"Select Birth Year"</string>
+    <string name="combination">"Combination"</string>
+    <string name="low">"Low"</string>
+    <string name="medium">"Medium"</string>
+    <string name="high">"High"</string>
+    <string name="scalp_condition">"Scalp Condition"</string>
+    <string name="hydrated">"Hydrated"</string>
+    <string name="simple_questions">"Simple Questions"</string>
+    <string name="sales_connection">"Sales Connection"</string>
+    <string name="share_via_qr">"Share via QR"</string>
+    <string name="you_can_choose_maximum_and_minimum_language">"You can choose maximum 4 and minimum 2 languages."</string>
+    <string name="share_result_via_sms_error">"Partner\'s remaining points are insufficient."</string>
+    <string name="product">"Product"</string>
+    <string name="main_screen">"Would you like me to help with your skin diagnosis?"</string>
+    <string name="server_connection_error">"Server Connection Error"</string>
+    <string name="choose_skin_group_description">"Please choose a skin group that best describes your skin type"</string>
+    <string name="check_lens_toast">"Please check the lens."</string>
+    <string name="error_lens">"Please re-combine the diagnostic device with the lens, or combine the lens you purchased."</string>
+    <string name="none">"None"</string>
+    <string name="beginning_stage">"Beginning Stage"</string>
+    <string name="middle_stage">"Middle Stage"</string>
+    <string name="last_stage">"Last Stage"</string>
+    <string name="otp_mismatch">"OTP Mismatch"</string>
+    <string name="product_matrix_download">"Product Matrix Download"</string>
+    <string name="recent_download">"Recent Download"</string>
+    <string name="download">"Download"</string>
+    <string name="app_capture_guide">"Tap anywhere inside
+this area to capture"</string>
+    <string name="ages">"Ages"</string>
+    <string name="ethnicities">"Ethnicities"</string>
+    <string name="seasons">"Seasons"</string>
+    <string name="ingredients">"Ingredients"</string>
+    <string name="no_data_available">"No data available"</string>
+
+
+
+    <!-- TODO: Add PoEdtier-->
+    <string name="product_recommendation_local">Product Recommendation</string>
+    <string name="are_you_a_member_of_this_store">"Are you a member of this store?"</string>
+    <string name="privacy_policy_ko">"Privacy Policy"</string>
+    <string name="language_et">Estonian</string>
+    <string name="language_es">"Spanish"</string>
+    <string name="language_it">Italiano</string>
+    <string name="language_fr">"Français"</string>
+    <string name="add_product">Add Product</string>
+    <string name="select_product_mode">Select Product Mode</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_link">Product link</string>
+    <string name="learn_more">LEARN MORE</string>
+    <string name="scan_qr_code_web_result_immediately">"Scan this QR code to access your\nWeb Results immediately."</string>
+
+    <string name="focus_camera_in_scalp">Focus the camera on the scalp for accurate analysis.</string>
+    <string name="return_device_to_shelf_hair">"Now return the Scalp Analyzer to the shelf \n and proceed with the questionnaire."</string>
+
+    <string name="almost_clear_hair_density">"Almost Clear"</string>
+    <string name="moderate_density">"Moderate"</string>
+    <string name="severe_hair_density">"Severe"</string>
+
+    <string name="normal_hydration">"Normal"</string>
+    <string name="hydration_d">"Hydrated"</string>
+
+    <string name="scalp_condition_normal">"Normal"</string>
+    <string name="medium_hair">"Medium"</string>
+
+    <string name="error_1006">"General Failure for unknown reason"</string>
+    <string name="error_41001">"Access token required, please try again."</string>
+    <string name="error_42001">"The auth token provided has problem. Try again or contact support."</string>
+    <string name="error_1001">"Unexpected error encountered, please try again or contact support if not resolved."</string>
+    <string name="error_10001">"Invalid access token"</string>
+    <string name="error_1004">"Empty required field, please check request body and try again."</string>
+    <string name="error_10003">"Unknown Token Error"</string>
+    <string name="error_10002">"Refresh Token Expired"</string>
+    <string name="error_6">"Device with this optic number is already registered."</string>
+    <string name="error_3">"Device with this optic number is already registered."</string>
+    <string name="error_msg_1">"Product credentials are required."</string>
+    <string name="error_msg_11001">"Could not register the device. Please try again."</string>
+    <string name="error_msg_4060">"Password change failed, please try again."</string>
+    <string name="error_msg_4050">"Customer not found, please contact support."</string>
+    <string name="error_msg_4040">"Record not found, please contact support."</string>
+    <string name="error_msg_404">"Resource not found"</string>
+
+    <string name="moderate_scalp_sensitivity">"Moderate"</string>
+    <string name="moderate_scalp_keratin">"Moderate"</string>
+
+    <string name="severe_scalp_sensitivity">"Severe"</string>
+    <string name="severe_scalp_keratin">"Severe"</string>
+
+    <string name="moderate_pore">"Moderate"</string>
+    <string name="severe_pore">"Severe"</string>
+    <string name="moderate_wrinkles">"Moderate"</string>
+    <string name="severe_wrinkles">"Severe"</string>
+    <string name="moderate_impurities">"Moderate"</string>
+    <string name="severe_impurities">"Severe"</string>
+    <string name="moderate_sensitivity">"Moderate"</string>
+    <string name="severe_sensitivity">"Severe"</string>
+    <string name="moderate_spots">"Moderate"</string>
+    <string name="severe_spots">"Severe"</string>
+
+    <string name="disclaimer_content">"This is a Beta App Version \n \n Some features are hidden on purpose and may not be available upon testing. Ongoing updates are scheduled and we are under quality assurance phase. For discussion and inquiries, email us at chowis@chowis.com"</string>
+
+    <string name="measurement_without_images">"Measurement without images"</string>
+    <string name="try_again">Try Again</string>
+    <string name="back">Back</string>
+
+    <!-- Reset Device -->
+    <string name="restart_device_content_1">(1) Please press and hold the on/off button for 2 seconds and\ncheck for the "blue light" to light up</string>
+    <string name="restart_device_content_2">(2) Once the light turns green, please press the “Try Again”\nbutton to reconnect with the application.</string>
+
+    <!-- Capture Guide -->
+    <string name="guide_title">How to capture your Skin Group</string>
+    <string name="guide_content">Dab the skin analyzer on your cheek.\nPress the capture button or tap on the screen</string>
+
+    <string name="capture_guide_content">Press the capture button or tap on the screen</string>
+
+    <string name="in_capture_guide_title">Please hold the device\nwhile taking the images</string>
+    <string name="in_capture_guide_content">Please hold the camera still</string>
+    <string name="tab_here">TAP HERE TO\nCAPTURE</string>
+
 </resources>

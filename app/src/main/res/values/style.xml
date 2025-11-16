@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="loginEditTextContainer">
+        <item name="android:layout_width">@dimen/_230sdp</item>
+        <item name="android:layout_height">@dimen/_33sdp</item>
         <item name="android:background">@drawable/bg_edit_text_container</item>
+    </style>
+
+    <style name="loginEditText">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/editTextHintColor</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
     </style>
 </resources>

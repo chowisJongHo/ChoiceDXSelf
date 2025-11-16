@@ -4,8 +4,13 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="buttonDisableColor">#BBBBBB</color>
 
     <color name="fragmentBackground">#F7F7F7</color>
     <color name="editTextHintColor">#BBBBBB</color>
     <color name="infoTextColor">#676767</color>
+
+    <color name="subTextColor">#5A5A5A</color>
 </resources>

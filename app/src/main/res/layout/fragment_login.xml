@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/bg_fragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fragment">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/companyLogoImage"
@@ -20,21 +20,18 @@
         android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/black"
         android:layout_marginTop="@dimen/_34sdp"
+        android:text="@string/administrator"
         android:textSize="@dimen/_11ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/companyLogoImage"
-        tools:text="Administrator" />
+        app:layout_constraintTop_toBottomOf="@id/companyLogoImage" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginEmailContainer"
         style="@style/loginEditTextContainer"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_33sdp"
-        android:layout_marginStart="@dimen/_35sdp"
         android:layout_marginTop="@dimen/_33sdp"
-        android:layout_marginEnd="@dimen/_35sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginTitle">
@@ -44,7 +41,7 @@
             android:layout_width="@dimen/_18sdp"
             android:layout_height="@dimen/_18sdp"
             android:layout_marginStart="@dimen/_11sdp"
-            android:background="@drawable/bg_login_icon"
+            android:background="@drawable/bg_round_icon"
             android:padding="@dimen/_5sdp"
             android:src="@drawable/ic_email"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -53,29 +50,21 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/loginEmailEdit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/loginEditText"
             android:layout_marginStart="@dimen/_11sdp"
             android:layout_marginEnd="@dimen/_11sdp"
-            android:background="@null"
+            android:hint="@string/email_address_input"
             android:inputType="textEmailAddress"
-            android:textColorHint="@color/editTextHintColor"
-            android:textSize="@dimen/_8ssp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/loginEmailIcon"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:hint="Email Address" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginPasswordContainer"
         style="@style/loginEditTextContainer"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_33sdp"
-        android:layout_marginStart="@dimen/_35sdp"
         android:layout_marginTop="@dimen/_7sdp"
-        android:layout_marginEnd="@dimen/_35sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginEmailContainer">
@@ -85,7 +74,7 @@
             android:layout_width="@dimen/_18sdp"
             android:layout_height="@dimen/_18sdp"
             android:layout_marginStart="@dimen/_11sdp"
-            android:background="@drawable/bg_login_icon"
+            android:background="@drawable/bg_round_icon"
             android:padding="@dimen/_5sdp"
             android:src="@drawable/ic_password"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -94,39 +83,66 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/loginPasswordEdit"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/loginEditText"
             android:layout_marginStart="@dimen/_11sdp"
             android:layout_marginEnd="@dimen/_11sdp"
             android:background="@null"
-            android:inputType="textEmailAddress"
-            android:textColorHint="@color/editTextHintColor"
-            android:textSize="@dimen/_8ssp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/loginPasswordIcon"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:hint="Password" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/loginInfoText"
+        android:id="@+id/loginForgetText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:textColor="@color/infoTextColor"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/forgot_password"
         android:textSize="@dimen/_8ssp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginPasswordContainer"
-        tools:text="Enter admin password to access the settings page" />
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/loginPasswordContainer"
+        app:layout_constraintTop_toBottomOf="@id/loginPasswordContainer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/sign_up"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_8ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/loginPasswordContainer"
+        app:layout_constraintTop_toBottomOf="@id/loginPasswordContainer" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/subTextColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:text="@string/not_a_member"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintEnd_toStartOf="@id/loginSignup"
+        app:layout_constraintTop_toBottomOf="@id/loginPasswordContainer" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginButton"
         android:layout_width="@dimen/_134sdp"
         android:layout_height="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/selector_rounded_button"
+        android:enabled="false"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginInfoText" />
+        app:layout_constraintTop_toBottomOf="@id/loginForgetText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
