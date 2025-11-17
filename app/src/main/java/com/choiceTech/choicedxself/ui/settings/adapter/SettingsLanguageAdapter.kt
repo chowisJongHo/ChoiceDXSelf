@@ -3,31 +3,34 @@ package com.choiceTech.choicedxself.ui.settings.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.choiceTech.choicedxself.R
+import com.choiceTech.choicedxself.core.model.settings.Language
 
-class SettingsLanguageAdapter: ListAdapter<SelectLanguageItem, SettingsLanguageAdapter.ViewHodler>(SelectLanguageDiffCallback){
+class SettingsLanguageAdapter: ListAdapter<Language, SettingsLanguageAdapter.ViewHodler>(LanguageDiffCallback){
     companion object {
-        object SelectLanguageDiffCallback: DiffUtil.ItemCallback<SelectLanguageItem>() {
-            override fun areItemsTheSame(
-                oldItem: SelectLanguageItem, newItem: SelectLanguageItem): Boolean {
+        object LanguageDiffCallback: DiffUtil.ItemCallback<Language>() {
+            override fun areItemsTheSame(oldItem: Language, newItem: Language): Boolean {
                 return oldItem == newItem
             }
 
-            override fun areContentsTheSame(
-                oldItem: SelectLanguageItem, newItem: SelectLanguageItem): Boolean {
+            override fun areContentsTheSame(oldItem: Language, newItem: Language): Boolean {
                 return oldItem == newItem
             }
-
         }
     }
+
     inner class ViewHodler(view: View): RecyclerView.ViewHolder(view) {
         private val viewContext = itemView.context
 
-        fun bind(selectLanguageItem: SelectLanguageItem) {
+        val flagImageView: ImageView = view.findViewById(R.id.itemLanguageFlag)
+        val removeButton: ImageView = view.findViewById(R.id.itemLanguageRemove)
 
+        fun bind(item: Language) {
+            flagImageView.setImageResource(item.icon)
         }
     }
 
@@ -44,8 +47,3 @@ class SettingsLanguageAdapter: ListAdapter<SelectLanguageItem, SettingsLanguageA
         holder.bind(getItem(position))
     }
 }
-
-enum class SelectLanguageItem(
-    val text: Int,
-    val image: Int
-)

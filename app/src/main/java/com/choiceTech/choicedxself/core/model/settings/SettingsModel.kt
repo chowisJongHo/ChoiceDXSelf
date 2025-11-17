@@ -72,3 +72,20 @@ enum class Mode(val position: Int, val strID: Int) {
         }
     }
 }
+
+enum class Language(
+    val code: String,
+    val icon: Int,
+    val strID: Int
+) {
+    ENGLISH("en", R.drawable.ic_language_english, R.string.language_en),
+    KOREAN("ko", R.drawable.ic_language_korean, R.string.language_ko),
+    JAPANESE("ja", R.drawable.ic_language_japan, R.string.language_ja),
+    CHINESE_SIMPLIFIED("zh-rCN", R.drawable.ic_language_chinese, R.string.language_zh_CN),
+    CHINESE_TRADITIONAL("zh-rTw", R.drawable.ic_language_chinese, R.string.language_zh_TW),
+    RUSSIAN("ru", R.drawable.ic_language_russia, R.string.language_ru),
+    ESTONIAN("et", R.drawable.ic_language_estonia, R.string.language_et),
+    ITALIAN("it", R.drawable.ic_language_italian, R.string.language_it),
+    SPANISH("es", R.drawable.ic_language_spanish, R.string.language_es),
+    FRENCH("fr", R.drawable.ic_language_french, R.string.language_fr)
+}

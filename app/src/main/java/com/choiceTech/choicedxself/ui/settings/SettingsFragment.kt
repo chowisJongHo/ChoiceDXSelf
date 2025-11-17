@@ -8,6 +8,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.choiceTech.choicedxself.core.base.BaseFragment
 import com.choiceTech.choicedxself.core.model.settings.AnalysisMode
+import com.choiceTech.choicedxself.core.model.settings.Language
 import com.choiceTech.choicedxself.core.model.settings.Mode
 import com.choiceTech.choicedxself.core.model.settings.ResultSummary
 import com.choiceTech.choicedxself.core.model.settings.SettingsGeneralSelected
@@ -102,7 +103,17 @@ class SettingsFragment: BaseFragment<FragmentSettingsBinding>(
             }
         }
 
-        val adapter = SettingsLanguageAdapter()
+        val languageList = listOf(
+            Language.ENGLISH,
+            Language.KOREAN,
+            Language.JAPANESE,
+            Language.CHINESE_SIMPLIFIED
+        )
+
+        val adapter = SettingsLanguageAdapter().apply {
+            submitList(languageList)
+        }
+
         binding.settingsLanguageRecycler.apply {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             this.adapter = adapter
