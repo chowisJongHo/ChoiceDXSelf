@@ -26,6 +26,7 @@
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:background="@drawable/bg_round_icon"
+                android:src="@drawable/ic_settings_device"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -60,6 +61,7 @@
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:background="@drawable/bg_round_icon"
+                android:src="@drawable/ic_settings_product"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -94,6 +96,7 @@
                 android:layout_width="@dimen/_24sdp"
                 android:layout_height="@dimen/_24sdp"
                 android:background="@drawable/bg_round_icon"
+                android:src="@drawable/ic_settings_logout"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -134,30 +137,58 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settingsGeneralText">
 
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/settingsGeneralText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_summary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsGeneralResultSelected"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settingsGeneralResultArrow"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/skin_age" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/settingsGeneralResultArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:src="@drawable/ic_settings_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/settingsResultItemContainer"
             style="@style/settingsGeneralBase.ItemContainer"
-            android:visibility="invisible"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settingsResultContainer"
-            tools:visibility="gone">
+            tools:visibility="visible">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/settingsResultHealthText"
-                style="@style/settingsGeneralItemText"
+                style="@style/settingsGeneralText.Item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/skin_health_score"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/settingsResultIAgeText"
-                style="@style/settingsGeneralItemText"
+                style="@style/settingsGeneralText.Item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_13sdp"
@@ -174,6 +205,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/settingsResultItemContainer">
 
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/settingsGeneralText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_analysis_mode"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsAnalysisSelected"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settingsGeneralAnalysisArrow"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/settings_online_analysis" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/settingsGeneralAnalysisArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:src="@drawable/ic_settings_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -182,11 +243,11 @@
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/settingsResultContainer">
+            app:layout_constraintTop_toBottomOf="@id/settingsAnalysisContainer">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/settingsAnalysisOnlineText"
-                style="@style/settingsGeneralItemText"
+                style="@style/settingsGeneralText.Item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/settings_online_analysis"
@@ -196,7 +257,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/settingsAnalysisOfflineText"
-                style="@style/settingsGeneralItemText"
+                style="@style/settingsGeneralText.Item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_13sdp"
@@ -206,7 +267,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/settingsAnalysisWithoutText"
-                style="@style/settingsGeneralItemText"
+                style="@style/settingsGeneralText.Item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_13sdp"
@@ -215,5 +276,272 @@
                 app:layout_constraintTop_toBottomOf="@id/settingsAnalysisOfflineText" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingsSleepContainer"
+            style="@style/settingsGeneralBase.Container"
+            android:layout_marginTop="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsAnalysisItemContainer">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/settingsGeneralText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep_option"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsSleepSelected"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settingsGeneralSleepsArrow"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/sleep_option_30" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/settingsGeneralSleepsArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:src="@drawable/ic_settings_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingsSleepItemContainer"
+            style="@style/settingsGeneralBase.ItemContainer"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsSleepContainer">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsSleep30Text"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sleep_option_30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsSleepNeverText"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="@string/sleep_option_never"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/settingsSleep30Text" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingsSkinGroupContainer"
+            style="@style/settingsGeneralBase.Container"
+            android:layout_marginTop="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsSleepItemContainer">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/settingsGeneralText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skin_group_selection"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsSkinGroupSelected"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settingsGeneralSkinGroupArrow"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/selection_auto" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/settingsGeneralSkinGroupArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:src="@drawable/ic_settings_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingsSkinGroupItemContainer"
+            style="@style/settingsGeneralBase.ItemContainer"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsSkinGroupContainer"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsSkinGroupAutoText"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selection_auto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsSkinGroupAutoManualText"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="@string/selection_auto_manual"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/settingsSkinGroupAutoText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsSkinGroupDisableText"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="@string/settings_disable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/settingsSkinGroupAutoManualText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingsModeContainer"
+            style="@style/settingsGeneralBase.Container"
+            android:layout_marginTop="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsSkinGroupItemContainer">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/settingsGeneralText.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mode"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsModeSelected"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/settingsGeneralModeArrow"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/selectable" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/settingsGeneralModeArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:src="@drawable/ic_settings_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/settingsModeItemContainer"
+            style="@style/settingsGeneralBase.ItemContainer"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsModeContainer"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsModeSelectableText"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsModeSkinOnlyText"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="@string/skin_only"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/settingsModeSelectableText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/settingsModeHairOnlyText"
+                style="@style/settingsGeneralText.Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:text="@string/hair_only"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/settingsModeSkinOnlyText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/settingsLanguageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="@string/language_settings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settingsModeItemContainer" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/bg_language"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/settingsLanguageTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_46sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/settingsLanguageRecycler"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/settingsLanguageAddButton"
+                android:src="@drawable/ic_language_added"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_7sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

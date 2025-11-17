@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="alarming">"Alarming"</string>
+    <string name="store_name">"Store Name"</string>
+    <string name="scalp_sebum">"Scalp Sebum"</string>
+    <string name="hair_density">"Hair Density"</string>
+    <string name="scalp_impurity">"Scalp Impurity"</string>
+    <string name="scalp_sensitivity">"Scalp Sensitivity"</string>
+    <string name="scalp_analysis">"Scalp Analysis"</string>
+    <string name="scalp_hydration">"Scalp Hydration"</string>
+    <string name="scalp_keratin">"Scalp Keratin"</string>
+    <string name="hydration_b">"Dehydrated"</string>
+    <string name="humidity">"Humidity"</string>
+
+    <!-- new strings -->
+    <string name="hair_thickness">"Hair\nThickness"</string>
+    <string name="hair_loss">"Hair\nLoss"</string>
+    <string name="hair_damage">"Hair Damage"</string>
+    <string name="no_hair_loss">"No\nHair Loss"</string>
+    <string name="forget_password">"Forget Password?"</string>
+    <string name="dont_worry_this_happens">"Don’t worry, this happens."</string>
+    <string name="read_more">"Read more"</string>
+    <string name="title">"Title"</string>
+    <string name="we_detected_that_captured">"We detected that the captured images are not aligned or not in the same area."</string>
+    <string name="health_tips">"Health Tips"</string>
+    <string name="hair_only">"HO(Hair Only)"</string>
+    <string name="type_hair">"Hair"</string>
+    <string name="how_to_capture_hair">"How to capture your scalp measurement."</string>
+    <string name="capture_guide_1">"Part your hair in the middle or side of your head."</string>
+    <string name="hairloss_point_one">"Frontal scalp"</string>
+    <string name="hairloss_point_two">"Crown Scalp"</string>
+    <string name="hairloss_point_four_male">"Temporal 2"</string>
+    <string name="hairloss_point_three_male">"Temporal 1"</string>
+    <string name="hairloss_point_three_female">"Middle Scalp"</string>
+    <string name="hairloss_point_four_female">"Temporal"</string>
+    <string name="dab_the_hair_analyzer">"Dab the scalp analyzer on your scalp and press the capture button."</string>
+    <string name="fine_hair">"Fine"</string>
+    <string name="coarse_hair">"Coarse"</string>
+    <string name="non_hair_loss_guide">"No longer display this page."</string>
+    <string name="capture_guide_2">"Pick up the ChoiceTech Hair Analyzer and ready to place on your hair."</string>
+
+</resources>

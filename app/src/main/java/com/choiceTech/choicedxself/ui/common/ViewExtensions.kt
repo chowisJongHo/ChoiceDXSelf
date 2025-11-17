@@ -6,7 +6,10 @@ import android.app.Dialog
 import android.content.res.ColorStateList
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.RotateAnimation
 import android.widget.Button
+import android.widget.ImageView
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
 import com.choiceTech.choicedxself.R
@@ -46,6 +49,24 @@ private fun View.animateFillTint(
         }
     }
     animator.start()
+}
+
+fun ImageView.animateRotate(rotateUp: Boolean) {
+    val fromDegrees = if (rotateUp) 0f else 90f
+    val toDegrees = if (rotateUp) 90f else 0f
+    val anim = RotateAnimation(
+        fromDegrees,
+        toDegrees,
+        Animation.RELATIVE_TO_SELF,
+        0.5f,
+        Animation.RELATIVE_TO_SELF,
+        0.5f
+    ).apply {
+        duration = 200
+        fillAfter = true
+    }
+
+    this.startAnimation(anim)
 }
 
 suspend fun StateFlow<ApiUiState>.collectHandler(
