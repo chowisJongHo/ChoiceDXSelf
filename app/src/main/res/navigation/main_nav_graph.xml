@@ -47,4 +47,7 @@
         android:name="com.choiceTech.choicedxself.ui.settings.SettingsFragment"
         tools:layout="@layout/fragment_settings" />
 
+    <fragment
+        android:id="@+id/registerOpticFragment" />
+
 </navigation>

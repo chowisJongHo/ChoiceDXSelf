@@ -9,4 +9,5 @@ class CrmUseCase @Inject constructor(
     suspend fun login(email: String, password: String) = crmRepository.login(email, password)
     suspend fun signup(email: String, password: String) = crmRepository.signup(email, password)
     suspend fun logout() = crmRepository.logout()
+    suspend fun productEnter(opticNumber: String) = crmRepository.productEnter(opticNumber)
 }

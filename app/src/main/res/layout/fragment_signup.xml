@@ -28,7 +28,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/signupEmailContainer"
-        style="@style/loginEditTextContainer"
+        style="@style/basicEditTextContainer"
         android:layout_marginTop="@dimen/_21sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signupEmailEdit"
-            style="@style/loginEditText"
+            style="@style/basicEditText"
             android:layout_marginStart="@dimen/_11sdp"
             android:layout_marginEnd="@dimen/_11sdp"
             android:hint="@string/email_address_input"
@@ -61,7 +61,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/signupPasswordContainer"
-        style="@style/loginEditTextContainer"
+        style="@style/basicEditTextContainer"
         android:layout_marginTop="@dimen/_7sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signupPasswordEdit"
-            style="@style/loginEditText"
+            style="@style/basicEditText"
             android:layout_marginStart="@dimen/_11sdp"
             android:layout_marginEnd="@dimen/_11sdp"
             android:hint="@string/password"
@@ -94,7 +94,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/signupConfirmContainer"
-        style="@style/loginEditTextContainer"
+        style="@style/basicEditTextContainer"
         android:layout_marginTop="@dimen/_7sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +114,7 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/signupConfirmEdit"
-            style="@style/loginEditText"
+            style="@style/basicEditText"
             android:layout_marginStart="@dimen/_11sdp"
             android:layout_marginEnd="@dimen/_11sdp"
             android:hint="@string/confirm_password"

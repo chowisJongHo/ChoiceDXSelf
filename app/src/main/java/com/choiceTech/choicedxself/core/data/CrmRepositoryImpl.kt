@@ -77,5 +77,25 @@ class CrmRepositoryImpl @Inject constructor(
                 override fun onDidStart() {}
                 override fun onSuccess(p0: Any?) {}
             })
+        }
+
+    override suspend fun productEnter(opticNumber: String): CrmEvent.RegisterOptic =
+        suspendCoroutine { continuation ->
+            loginCRM.onRequestProductEnter(object : ResponseCallback<Any>() {
+                override fun onFailure(p0: CWErrorData) {
+                    continuation.resume(CrmEvent.RegisterOptic.Failer(p0))
+                }
+
+
+                override fun onError(p0: CWErrorData) {
+                    continuation.resume(CrmEvent.RegisterOptic.Failer(p0))
+                }
+                override fun onDidStart() {}
+
+                override fun onSuccess(p0: Any?) {
+                    continuation.resume(CrmEvent.RegisterOptic.Success)
+                }
+
+            }, opticNumber)
     }
 }

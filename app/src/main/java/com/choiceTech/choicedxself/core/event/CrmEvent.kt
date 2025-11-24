@@ -17,4 +17,9 @@ sealed class CrmEvent {
         object Success: Logout()
         object Failer: Logout()
     }
+
+    sealed class RegisterOptic {
+        object Success: RegisterOptic()
+        data class Failer(val errorData: CWErrorData): RegisterOptic()
+    }
 }

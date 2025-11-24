@@ -30,7 +30,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginEmailContainer"
-        style="@style/loginEditTextContainer"
+        style="@style/basicEditTextContainer"
         android:layout_marginTop="@dimen/_33sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,7 +50,7 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/loginEmailEdit"
-            style="@style/loginEditText"
+            style="@style/basicEditText"
             android:layout_marginStart="@dimen/_11sdp"
             android:layout_marginEnd="@dimen/_11sdp"
             android:hint="@string/email_address_input"
@@ -63,7 +63,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginPasswordContainer"
-        style="@style/loginEditTextContainer"
+        style="@style/basicEditTextContainer"
         android:layout_marginTop="@dimen/_7sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +83,7 @@
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/loginPasswordEdit"
-            style="@style/loginEditText"
+            style="@style/basicEditText"
             android:layout_marginStart="@dimen/_11sdp"
             android:layout_marginEnd="@dimen/_11sdp"
             android:background="@null"
